@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy PHP app to Azure Web App - EmpowerUP1
+name: Build and deploy PHP app to Azure Web App - Empowerup1
 
 on:
   push:
@@ -56,15 +56,15 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_E7001BA72E9E4238B7B76098EF0CE658 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_2842A82573FF42A2BDEEFE546B1034F7 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_FAA2922D0CB4421FB48A4A3949A6E86B }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_B3D9F9FD3E5C4A989D06DABFC7DF9703 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_43F2AF9F013346F28A68C27E5C8943F0 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_3A619F0C5C8A461EA144494DDA203EBB }}
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v3
         id: deploy-to-webapp
         with:
-          app-name: 'EmpowerUP1'
+          app-name: 'Empowerup1'
           slot-name: 'Production'
           package: .
           
